@@ -92,15 +92,15 @@ header .btn__contact{
 section{
     width: 100%;
     height: 90vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     position: relative;
     top: 7rem;
 }
 
 .hero{
     padding: 2rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
 }
 
@@ -134,8 +134,9 @@ section{
 }
 
 .about{
-    height: 70vh;
+    height: 70%;
     padding: 2rem;
+    flex-direction: column;
 }
 
 .about h2{
@@ -178,6 +179,39 @@ section{
     text-transform: uppercase;
     text-align: center;
     margin-bottom: 30px;
+}
+
+.skills{
+    height: 70%;
+    padding: 2rem;
+    flex-direction: column;
+}
+
+.skills h2{
+    font-size: 40px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.skills main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.skills main .skill{
+    width: 30%;
+    height: 300px;
+    padding: 3rem;
+    margin-top: 50px;
+    border: 1px solid #010101;
+    border-radius: 20px;
+}
+
+.skills main .skill h3{
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 10px;
 }
 
 @media screen and (max-width:768px){
@@ -238,6 +272,32 @@ section{
         width: 100%;
         padding: 1.5rem;
         margin-top: 50px;
+    }
+
+    .skills{
+        height: 100vh;
+        margin-top: 150%;
+        width: 100%;
+        padding: 2rem;
+    }
+
+    .skills h2{
+        font-size: 30px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    .skills main{
+        flex-direction: column;
+    }
+
+    .skills main .skill{
+        width: 100%;
+        height: 70%;
+        padding: 3rem;
+        margin-top: 50px;
+        border: 1px solid #010101;
+        border-radius: 20px;
     }
     
 }
