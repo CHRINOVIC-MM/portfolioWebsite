@@ -97,6 +97,7 @@ section{
 }
 
 .hero{
+    padding: 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -129,7 +130,53 @@ section{
 
 .hero .text__presentation p{
     font-size: 25px;
-    color: #010101;
     color: crimson;
 }
 
+.about{
+    height: 70vh;
+    padding: 2rem;
+}
+
+.about h2{
+    font-size: 40px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+.about main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+.about main .presentation{
+    width: 40%;
+    padding: 3rem;
+    margin-top: 50px;
+    border-right: 1px solid #010101;
+}
+
+.about main .presentation h3{
+    font-size: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.about main .supplement{
+    width: 40%;
+    padding: 3rem;
+    margin-top: 50px;
+    border-left: 1px solid #010101;
+}
+
+.about main .supplement h3{
+    font-size: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 30px;
+}
