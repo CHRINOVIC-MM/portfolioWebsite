@@ -22,7 +22,7 @@ header{
 }
 
 header .logo__container{
-    width: 20%;
+    width: 23%;
     height: 100%;
     display: flex;
     justify-content: space-between;
@@ -37,6 +37,11 @@ header .logo__container .logo__image{
 
 header .logo__container .logo__description{
     text-transform: uppercase;
+}
+
+header .logo__container .logo__description a{
+    color: #010101;
+    text-decoration: none;
 }
 
 header .navigation__bar{
@@ -63,6 +68,7 @@ header .navigation__bar .nav__list .nav__items .nav__link{
     color: #010101;
     font-size: 20px;
     transition: all .3s ease-in;
+    text-transform: capitalize;
 }
 
 header .navigation__bar .nav__list .nav__items .nav__link:hover{
@@ -81,5 +87,49 @@ header .btn__contact{
     padding: 1rem;
     border-radius: 10px;
     text-decoration: none;
+}
+
+section{
+    width: 100%;
+    height: 90vh;
+    position: relative;
+    top: 7rem;
+}
+
+.hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hero img{
+    width: 30%;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 350px;
+}
+
+.hero .text__presentation{
+    width: 70%;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.hero .text__presentation h2{
+    font-size: 50px;
+    color: #010101;
+    font-weight: bolder;
+}
+
+.hero .text__presentation h2 span{
+    color: crimson;
+    text-transform: uppercase;
+}
+
+.hero .text__presentation p{
+    font-size: 25px;
+    color: #010101;
+    color: crimson;
 }
 
