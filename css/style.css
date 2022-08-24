@@ -6,6 +6,15 @@
     font-family: 'Poppins', sans-serif;
 }
 
+/*:root{
+    --bg-color1: #101010;
+    --bg-color2: #191919;
+    --text-color1 : #000;
+    --text-color2: #f9004d;
+    --text-color3: #fcfc;
+    --text-color4: #fff;
+}*/
+
 html{
     scroll-behavior: smooth;
 }
@@ -40,12 +49,12 @@ header .logo__container .logo__description{
 }
 
 header .logo__container .logo__description a{
-    color: #010101;
+    color: #000000;
     text-decoration: none;
 }
 
 header .navigation__bar{
-    width: 30%;
+    width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -65,15 +74,15 @@ header .navigation__bar .nav__list .nav__items{
 
 header .navigation__bar .nav__list .nav__items .nav__link{
     text-decoration: none;
-    color: #010101;
+    color: #000000;
     font-size: 20px;
     transition: all .3s ease-in;
     text-transform: capitalize;
 }
 
 header .navigation__bar .nav__list .nav__items .nav__link:hover{
-    border: 1px solid #010101;
-    background: #010101;
+    border: 1px solid #000000;
+    background: #000000;
     color: #fff;
     padding: 1rem;
     border-radius: 10px;
@@ -103,7 +112,8 @@ section{
     justify-content: space-between;
     align-items: center;
     position: relative;
-    top: 7rem;
+    top: 6rem;
+    background: var(--bg-color1);
 }
 
 .hero{
@@ -115,7 +125,7 @@ section{
     width: 30%;
     height: 500px;
     object-fit: cover;
-    border-radius: 350px;
+    border-radius: 100%;
 }
 
 .hero .text__presentation{
@@ -131,13 +141,13 @@ section{
 }
 
 .hero .text__presentation h2 span{
-    color: crimson;
+    color: var(--text-color2);
     text-transform: uppercase;
 }
 
 .hero .text__presentation p{
     font-size: 25px;
-    color: crimson;
+    color: var(--text-color2);
 }
 
 .about{
@@ -163,7 +173,6 @@ section{
 .about main .presentation, .about main .supplement{
     width: 40%;
     height: 50%;
-    border: 1px solid #010101;
     border-radius: 20px;
     padding: 3rem;
     margin-top: 50px;
@@ -176,40 +185,46 @@ section{
     margin-bottom: 30px;
 }
 
-
-.skills{
-    height: 70%;
-    padding: 2rem;
-    flex-direction: column;
+.about main .supplement main{
+    width: 80%;
 }
 
-.skills h2{
-    font-size: 40px;
-    text-align: center;
+.about main .supplement main .partie1 p{
+    font-size: 18px;
+}
+
+.about main .supplement main .partie1 p span{
     text-transform: uppercase;
 }
 
-.skills main{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.about main .supplement main .partie2 p{
+    font-size: 18px;
 }
 
-.skills main .skill{
-    text-align: center;
-    width: 30%;
-    height: 50%;
-    padding: 3rem;
-    margin-top: 50px;
-    border: 1px solid #010101;
-    border-radius: 20px;
+.about main .supplement main .partie2 p span a{
+    color: var(--text-color4);
 }
 
-.skills main .skill h3{
-    font-size: 30px;
-    text-align: center;
-    margin-bottom: 10px;
+.presentation p{
+    font-size: 18px;
 }
+
+.presentation p span{
+    text-transform: uppercase;
+    
+}
+
+.presentation p span a{
+    color: var(--text-color2);
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: all .3s ease-in;
+}
+
+.presentation p span a:hover{
+    text-decoration: underline;
+}
+
 
 @media screen and (max-width:768px){
     html{
@@ -243,7 +258,7 @@ section{
     }
 
     .hero img{
-        width: 70%;
+        width: 50%;
         border-radius: 100px;
     }
 
@@ -269,35 +284,6 @@ section{
         width: 100%;
         padding: 1.5rem;
         margin-top: 50px;
-    }
-
-    .skills{
-        height: 100vh;
-        width: 100%;
-        padding: 2rem;
-    }
-
-    .skills h2{
-        font-size: 40px;
-        text-align: center;
-        text-transform: uppercase;
-    }
-
-    .skills main{
-        flex-direction: column;
-    }
-
-    .skills main .skill{
-        width: 80%;
-        height: 70%;
-        padding: 1rem;
-        margin-top: 50px;
-        border: 1px solid #010101;
-        border-radius: 20px;
-    }
-
-    .skills main .skill h3:nth-child(2){
-        text-align: start;
     }
     
 }
