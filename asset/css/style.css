@@ -3,3 +3,32 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+header{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+}
+
+header .logo__container{
+    width: 28%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+header .logo__container img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+header .logo__container .logo__description a{
+    text-decoration: none;
+    color: #010101;
+    text-transform: uppercase;
+}
