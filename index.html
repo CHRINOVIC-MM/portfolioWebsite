@@ -1,47 +1,71 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <link rel="shortcut icon" href="./img/logo.jpg" type="image/x-icon">
     <link rel="stylesheet" href="./asset/css/style.css">
-    <title>Mon portfolio</title>
+    <title>Portfolio</title>
 </head>
 <body>
     
-<nav role="navigation">
-    <h1>&star;Chrnovic MM</h1>
+    <header>
+        <div class="logo__container">
+            <img src="./asset/img/logo.jpg" alt="mon logo" class="logo__image">
+            <h1 class="logo__description"><a href="index.html">chrinovic mm</a></h1>
+        </div>
 
-    <ul>
-        <li><a href="mailto:chrinovicmukeba123@gmail.com">&phone;chrinovicmukeba123@gmail.com</a></li>
-        <li id="dark-light-mode">Dark mode</li>
-    </ul>
-</nav>
+        <nav class="navigation__bar">
+            <ul class="nav__list">
+                <li class="nav__items"><a href="#hero" class="nav__link">home</a></li>
+                <li class="nav__items"><a href="#about" class="nav__link">About</a></li>
+                <li class="nav__items"><a href="#education" class="nav__link">skills And education</a></li>
+                <li class="nav__items"><a href="#" class="nav__link">Portfolio</a></li>
+                <li class="nav__items"><a href="#" class="nav__link">blog</a></li>
+                <li class="nav__items"><a href="#" class="nav__link">contact</a></li>
+            </ul>
+        </nav>
 
-<section class="hero">
-    <div class="left">
-        <small>&homtht;Lubumbashi Drc</small>
-        <h1>Salut, <br>
-        Je suis Chrinovic MM</h1>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus iusto non fugiat quibusdam rem id ducimus error exercitationem esse veritatis, voluptate, cupiditate ad libero nobis corrupti laboriosam aspernatur soluta corporis?</p>
-            <div class="links">
-                <a href="#">Telegram</a>
-                <a href="#">Instagram</a>
-                <a href="#">Facebook</a>
-                <a href="#">Linkedin</a>
-                <a href="#">Twitter</a>
-                <a href="#">Github</a>
+        <a href="tel:+243991007401" class="btn__contact">me joindre</a>
+    </header>
+
+
+    <section class="hero" id="hero">
+        <img src="./asset/img/profil.jpg" alt="ma photo">
+
+        <div class="text__presentation">
+            <h2>Je m'appel Chrinovic<span> Mukeba</span></h2>
+            <p>Je suis développeur Front-end</p>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <h2>A propos de moi</h2>
+        <main>
+            <div class="presentation">
+                <h3>presentation</h3>
+                <p>Mon nom est Chrinovic Mukeba, je suis un humain, un développeur Front-end, passionné
+                    de l'informatique, je suis étudiant à l'école supérieure d'informatique salama
+                    j'accompagne ceux qui veulent se lancer dans le monde du développement web en mettant
+                    à leurs disposition du contenu qui les permet de bien apprendre, je leur accompagne en leur 
+                    monttrant des plateformes qui peuvent les aider à apprendre le développement web <br>
+                    J'intérragi dans plusieurs communauté : <span><a href="#">DevCube</a></span>,<span><a href="#">  EspacEsis</a></span>, <span><a href="#"> GDGLubumbashi</a></span>, <span><a href="#"> GDSC Esisalama</a></span>, <span><a href="#"> Cercle Scientiphique Math-Info</a></span>
+                    </p>
             </div>
-    </div>
-    <div class="right">
-        <img src="./asset/img/profil.jpg" alt="">
-    </div>
-</section>
 
-<section class="about" id="about">
-    
-</section>
+            <div class="supplement">
+                <h3>Medias sociaux</h3>
+                    <div class="partie2">
+                        <p>LinkdIn: <span><a href="#">Chrinovic MM</a></span></p>
+                        <p>Github: <span><a href="#">CHRINOVIC-MM</a></span></p>
+                        <p>Twitter: <span><a href="#">@chrinovicmukeba</a></span></p>
+                    </div>
+            </div>
+        </main>
+    </section>
 
-
+    <section class="skill education" id="education"></section>
 </body>
 </html>
