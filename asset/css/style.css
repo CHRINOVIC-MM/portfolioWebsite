@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
 header{
@@ -31,4 +33,26 @@ header .logo__container .logo__description a{
     text-decoration: none;
     color: #010101;
     text-transform: uppercase;
+}
+
+header .navigation__bar{
+    width: 40%;
+    height: 100%;
+}
+
+header .navigation__bar .nav__list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+header .navigation__bar .nav__list .nav__items{
+    list-style: none;
+    display: inline-block;
+}
+
+header .navigation__bar .nav__list .nav__items a{
+    text-decoration: none;
+    font-size: 19px;
 }
