@@ -6,6 +6,10 @@
     font-family: 'Poppins', sans-serif;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 header{
     width: 100%;
     height: 100px;
@@ -13,6 +17,9 @@ header{
     justify-content: space-between;
     align-items: center;
     padding: 2rem;
+    position: fixed;
+    z-index: 10000;
+    background: #fff;
 }
 
 header .logo__container{
@@ -55,4 +62,29 @@ header .navigation__bar .nav__list .nav__items{
 header .navigation__bar .nav__list .nav__items a{
     text-decoration: none;
     font-size: 19px;
+    color: #010101;
+    transition: all .3s ease-in-out;
+}
+
+header .navigation__bar .nav__list .nav__items a:hover{
+    padding: 1rem;
+    background: #010101;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    color: #fff;
+}
+
+header .cont a{
+    border: 1px solid #18191a;
+    font-size: 19px;
+    padding: 1.2rem;
+    text-decoration: none;
+    color: #f1f1f1;
+    background-color: #18191a;
+}
+
+section{
+    position: relative;
+    top: 6.5rem;
+    height: 90vh;
 }
