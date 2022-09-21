@@ -88,3 +88,23 @@ section{
     top: 6.5rem;
     height: 90vh;
 }
+
+.hero{
+    margin-bottom: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hero img{
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 2rem;
+}
+
+.hero .text__presentation{
+    text-align: center;
+}
