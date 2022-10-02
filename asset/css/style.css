@@ -69,8 +69,6 @@ header .navigation__bar .nav__list .nav__items a{
 header .navigation__bar .nav__list .nav__items a:hover{
     padding: 1rem;
     background: #010101;
-    border: 1px solid #fff;
-    border-radius: 20px;
     color: #fff;
 }
 
@@ -202,7 +200,7 @@ section{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 30px;
+    gap: 20px;
 }
 
 .skills .skills__container .skill h3{
