@@ -90,6 +90,7 @@ section{
 }
 
 .hero{
+    height: 90vh;
     margin-bottom: 3rem;
     display: flex;
     justify-content: center;
